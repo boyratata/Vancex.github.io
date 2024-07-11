@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contributors to the Vance project.">
+    <meta name="theme-color" content="#9f13fe">
+    <title>Contributors</title>
+    <link rel="stylesheet" href="https://boyratata.github.io/Vancex.github.io/css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Additional styles can be placed here */
+        body {
+            background-image: url('https://github.com/boyratata/icon.github.io/raw/main/blackmountains.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contributors-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .contributor-card {
+            width: 280px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            backdrop-filter: blur(10px); /* Slight blurry effect */
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .contributor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+        }
+        .contributor-card img {
+            width: 100%;
+            height: 280px; /* Adjust image height */
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .contributor-card:hover img {
+            transform: scale(1.1);
+        }
+        .contributor-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            backdrop-filter: blur(5px); /* Slightly blurred effect */
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            height: 120px; /* Adjust height for text content */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .contributor-info p {
+            margin: 8px 0;
+            font-size: 14px;
+            line-height: 1.4;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .contributor-info a {
+            color: #9f13fe;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .contributor-info a:hover {
+            color: #7d0d9e;
+        }
+    </style>
+</head>
+<body>
+    <main role="main">
+        <div class="contributors-container">
+            <!-- Contributor 1 -->
+            <div class="contributor-card">
+                <img src="https://cdn.discordapp.com/avatars/1156416601122426981/8cd602b73f2274e8df2f70f70abe001f.png" alt="Profile picture of Contributor 1">
+                <div class="contributor-info">
+                    <p class="text-xl font-semibold">Altan: THE GOAT</p>
+                    <p>Discord: <a href="https://discord.com/users/1156416601122426981" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
+                </div>
+            </div>
+            <!-- Contributor 2 -->
+            <div class="contributor-card">
+                <img src="https://cdn.discordapp.com/avatars/836142241898430476/3a7748d29661e12730bb9866a420ec48.png" alt="Profile picture of Contributor 2">
+                <div class="contributor-info">
+                    <p class="text-xl font-semibold">bella: THE IMAGE MAKER THE BEST OF THE BEST</p>
+                    <p>Discord: <a href="https://discord.com/users/836142241898430476" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
+                </div>
+            </div>
+            <!-- Add more contributors as needed -->
+        </div>
+        <div class="mt-8 text-center">
+            <a href="index.html" class="font-semibold text-purple-400 hover:text-purple-500 transition-colors">Back to Home <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </main>
+</body>
+</html>
