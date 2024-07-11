@@ -21,7 +21,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Use min-height for full page background */
         }
         .contributors-container {
             display: flex;
@@ -30,6 +30,7 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+            flex-wrap: wrap; /* Allow contributors to wrap to the next line */
         }
         .contributor-card {
             width: 280px;
@@ -89,9 +90,21 @@
         .contributor-info a:hover {
             color: #7d0d9e;
         }
+        .back-to-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #9f13fe;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .back-to-home:hover {
+            color: #7d0d9e;
+        }
     </style>
 </head>
 <body>
+    <a href="index.html" class="back-to-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
     <main role="main">
         <div class="contributors-container">
             <!-- Contributor 1 -->
@@ -111,16 +124,24 @@
                 </div>
             </div>
             
-			<div class="contributor-card">
-                <img src="https://cdn.discordapp.com/avatars/975950303398613033/8d24b2e7fd9fc10f891df03ffc98cacf.png" alt="Profile picture of Contributor 2">
+            <!-- Contributor 3 -->
+            <div class="contributor-card">
+                <img src="https://cdn.discordapp.com/avatars/975950303398613033/8d24b2e7fd9fc10f891df03ffc98cacf.png" alt="Profile picture of Contributor 3">
                 <div class="contributor-info">
                     <p class="text-xl font-semibold">V!: ALTANS GF</p>
-                    <p>Discord: <a href="https://discord.com/users/836142241898430476" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
+                    <p>Discord: <a href="https://discord.com/users/975950303398613033" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
                 </div>
-			<div>	
-        </div>
-        <div class="mt-8 text-center">
-            <a href="index.html" class="font-semibold text-purple-400 hover:text-purple-500 transition-colors">Back to Home <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <!-- New Contributor -->
+            <div class="contributor-card">
+                <img src="https://cdn.discordapp.com/avatars/931899902223593472/487dee8f8cdae9839a5fdd327b3f25e1.webp?size=1024&format=webp&width=0&height=170" alt="Profile picture of New Contributor">
+                <div class="contributor-info">
+                    <p class="text-xl font-semibold">SIS: SISTER OF ALTAN</p>
+                    <p>Discord: <a href="https://discord.com/users/931899902223593472" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
+                </div>
+            </div>
+            
         </div>
     </main>
 </body>
