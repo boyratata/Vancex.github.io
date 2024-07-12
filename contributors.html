@@ -6,6 +6,7 @@
     <meta name="description" content="Contributors to the Vance project.">
     <meta name="theme-color" content="#9f13fe">
     <title>Contributors</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/boyratata/Vancex.github.io/main/img/red.png">
     <link rel="stylesheet" href="https://boyratata.github.io/Vancex.github.io/css/site.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
@@ -22,6 +23,35 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh; /* Use min-height for full page background */
+        }
+        .owner-section {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff; /* White text color */
+        }
+        .owner-section img {
+            width: 200px; /* Adjusted image width */
+            height: 200px; /* Adjusted image height */
+            object-fit: cover;
+            border-radius: 50%; /* Rounded profile picture */
+            border: 5px solid #9f13fe; /* Purple border */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+        .owner-section h1 {
+            margin-top: 10px; /* Adjust spacing */
+        }
+        .owner-section p {
+            margin: 8px 0;
+            font-size: 16px; /* Adjust font size */
+        }
+        .owner-section a {
+            color: #9f13fe;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .owner-section a:hover {
+            color: #7d0d9e;
         }
         .contributors-container {
             display: flex;
@@ -104,10 +134,15 @@
     </style>
 </head>
 <body>
+    <div class="owner-section">
+        <img src="https://cdn.discordapp.com/avatars/1218777412364406906/60cb1db42b6049a4818fb8f11b398aa8.webp?size=1024&format=webp&width=0&height=170" alt="Profile picture of Owner">
+        <h1>Owner: Admin</h1>
+        <p>Discord: <a href="https://discord.com/users/1218777412364406906" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
+    </div>
+    
     <a href="index.html" class="back-to-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
     <main role="main">
         <div class="contributors-container">
-            <!-- Contributor 1 -->
             <div class="contributor-card">
                 <img src="https://cdn.discordapp.com/avatars/1156416601122426981/8cd602b73f2274e8df2f70f70abe001f.png" alt="Profile picture of Contributor 1">
                 <div class="contributor-info">
@@ -115,7 +150,6 @@
                     <p>Discord: <a href="https://discord.com/users/1156416601122426981" target="_blank" class="text-purple-400 hover:text-purple-500 transition-colors">Profile</a></p>
                 </div>
             </div>
-            <!-- Contributor 2 -->
             <div class="contributor-card">
                 <img src="https://cdn.discordapp.com/avatars/836142241898430476/3a7748d29661e12730bb9866a420ec48.png" alt="Profile picture of Contributor 2">
                 <div class="contributor-info">
@@ -124,7 +158,6 @@
                 </div>
             </div>
             
-            <!-- Contributor 3 -->
             <div class="contributor-card">
                 <img src="https://cdn.discordapp.com/avatars/975950303398613033/8d24b2e7fd9fc10f891df03ffc98cacf.png" alt="Profile picture of Contributor 3">
                 <div class="contributor-info">
@@ -133,7 +166,6 @@
                 </div>
             </div>
             
-            <!-- New Contributor -->
             <div class="contributor-card">
                 <img src="https://cdn.discordapp.com/avatars/931899902223593472/487dee8f8cdae9839a5fdd327b3f25e1.webp?size=1024&format=webp&width=0&height=170" alt="Profile picture of New Contributor">
                 <div class="contributor-info">
